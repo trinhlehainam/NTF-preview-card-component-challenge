@@ -1,0 +1,21 @@
+{
+  "name": "ntf-preview-card-component-challenge",
+  "version": "1.0.0",
+  "description": "![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "NODE_ENV=production npx tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "dev-css": "NODE_ENV=production npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "dev": "concurrently -k \"npm run dev-css\" \"live-server ./public\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.5.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="flex items-center justify-center bg-custom-bg min-h-screen">
+        <div class="relative flex flex-col bg-card-bg p-6 rounded-2xl space-y-4 w-[350px]">
+            <div class="relative flex justify-center items-center">
+                <img class="rounded-xl" src="images/image-equilibrium.jpg">
+                <div class="group absolute w-full h-full flex justify-center items-center cursor-pointer">
+                    <div class="absolute rounded-xl w-full h-full opacity-50 bg-cyan-custom hidden group-hover:block"></div>
+                    <img class="opacity-100 hidden group-hover:block z-10" src="images/icon-view.svg">
+                </div>
+            </div>
+            <div class="text-white text-[20px] hover:text-cyan-custom font-semibold cursor-pointer">Equilibrium #3429</div>
+            <div class="text-soft-blue font-outfit font-light text-[16px]">Our Equilibrium collection promotes balance and calm.</div>
+            <div class="flex flex-row justify-between">
+                <div class="flex space-x-1.5 items-center">
+                    <img src="images/icon-ethereum.svg">
+                    <div class="text-cyan-custom my-auto font-semibold">0.041 ETH</div>
+                </div>
+                <div class="flex space-x-1.5 items-center">
+                    <img src="images/icon-clock.svg">
+                    <div class="text-soft-blue font-outfit font-normal text-center my-auto">3 days left</div>
+                </div>
+            </div>
+            <div class="h-0.5 bg-custom-line" ></div>
+            <div class="flex space-x-3">
+                <img class="w-8 h-8 border-[1.5px] border-white rounded-full" src="images/image-avatar.png">
+                <div class="text-soft-blue my-auto font-outfit font-normal">Creation of <span class="text-white hover:text-cyan-custom cursor-pointer">Jules Wyvern</span></div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
